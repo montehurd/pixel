@@ -122,65 +122,65 @@ ${markerString}`
  * Priority 3 - run every 24 hours
  */
 const GROUP_CONFIG = {
-	login: {
-		name: 'Login and sign up pages',
-		priority: 3,
-		config: 'configLogin.js'
-	},
-	'web-maintained': {
-		name: 'Extensions and skins maintained by web team',
-		priority: 3,
-		config: 'configWebMaintained.js'
-	},
+	// login: {
+	// 	name: 'Login and sign up pages',
+	// 	priority: 3,
+	// 	config: 'configLogin.js'
+	// },
+	// 'web-maintained': {
+	// 	name: 'Extensions and skins maintained by web team',
+	// 	priority: 3,
+	// 	config: 'configWebMaintained.js'
+	// },
 	echo: {
 		name: 'Echo badges',
 		priority: 3,
 		config: 'configEcho.js'
 	},
-	'desktop-dev': {
-		name: 'Zebra Vector 2022 skin',
-		priority: 3,
-		config: 'configDesktopDev.js'
-	},
-	desktop: {
-		name: 'Vector 2022 skin',
-		priority: 1,
-		config: 'configDesktop.js'
-	},
-	mobile: {
-		name: 'Minerva and MobileFrontend',
-		priority: 1,
-		config: 'configMobile.js'
-	},
-	'campaign-events': {
-		priority: 2,
-		config: 'configCampaignEvents.js'
-	},
-	codex: {
-		priority: 1,
-		config: 'configCodex.js'
-	},
-	wikilambda: {
-		priority: 2,
-		config: 'configWikiLambda.js'
-	}
+	// 'desktop-dev': {
+	// 	name: 'Zebra Vector 2022 skin',
+	// 	priority: 3,
+	// 	config: 'configDesktopDev.js'
+	// },
+	// desktop: {
+	// 	name: 'Vector 2022 skin',
+	// 	priority: 1,
+	// 	config: 'configDesktop.js'
+	// },
+	// mobile: {
+	// 	name: 'Minerva and MobileFrontend',
+	// 	priority: 1,
+	// 	config: 'configMobile.js'
+	// },
+	// 'campaign-events': {
+	// 	priority: 2,
+	// 	config: 'configCampaignEvents.js'
+	// },
+	// codex: {
+	// 	priority: 1,
+	// 	config: 'configCodex.js'
+	// },
+	// wikilambda: {
+	// 	priority: 2,
+	// 	config: 'configWikiLambda.js'
+	// }
 };
 
 const A11Y_GROUP_CONFIG = {
-	desktop: {
-		name: 'Vector 2022 accessibility',
-		priority: 2,
-		a11y: true,
-		logResults: true,
-		config: 'configDesktopA11y.js'
-	},
-	mobile: {
-		name: 'Minerva and MobileFrontend accessibility',
-		priority: 2,
-		a11y: true,
-		logResults: true,
-		config: 'configMobileA11y.js'
-	}
+	// desktop: {
+	// 	name: 'Vector 2022 accessibility',
+	// 	priority: 2,
+	// 	a11y: true,
+	// 	logResults: true,
+	// 	config: 'configDesktopA11y.js'
+	// },
+	// mobile: {
+	// 	name: 'Minerva and MobileFrontend accessibility',
+	// 	priority: 2,
+	// 	a11y: true,
+	// 	logResults: true,
+	// 	config: 'configMobileA11y.js'
+	// }
 };
 
 /**
@@ -332,29 +332,36 @@ async function processCommand( type, opts, runSilently = false ) {
 					type, group, config.paths.html_report, runSilently || process.env.NONINTERACTIVE
 				);
 			}, async ( /** @type {Error} */ err ) => {
+				console.log('ERROR HAPPENED HERE!!!')
 				console.error( err );
 				// Don't check error message if caller asked us not to.
 				if ( err.message.includes( '130' ) ) {
 					// If user ends subprocess with a sigint, exit early.
 					if ( !runSilently ) {
+						console.log("EXIT CALL 1")
 						// eslint-disable-next-line no-process-exit
 						process.exit( 1 );
 					}
 				}
-
+console.log('MESSAGE:')
+console.log(err.message)
 				if ( err.message.includes( 'Exit with error code 1' ) ) {
 					await writeBannerAndOpenReportIfNecessary(
 						type, group, config.paths.html_report, process.env.NONINTERACTIVE
 					);
 					if ( !runSilently ) {
+						console.log("EXIT CALL 2")
 						// eslint-disable-next-line no-process-exit
 						process.exit( 1 );
 					}
 				}
 
+				console.log("RUN SILENT OR THROW")
 				if ( runSilently ) {
+					console.log("SILENT")
 					return Promise.resolve();
 				} else {
+					console.log("THROW")
 					throw err;
 				}
 			} ).finally( async () => {
@@ -367,6 +374,7 @@ async function processCommand( type, opts, runSilently = false ) {
 			return finished;
 		}
 	} catch ( err ) {
+		console.log("EXIT CALL 3")
 		console.error( err );
 		// eslint-disable-next-line no-process-exit
 		process.exit( 1 );
@@ -554,13 +562,13 @@ Running regression group "${groupName}"
 							msg = `(with ${changeId.join( ',' )}).`;
 						}
 						console.log( `Running reference group ${msg}` );
-						await processCommand( 'reference', {
-							branch: LATEST_RELEASE_BRANCH,
-							changeId: opts.changeId,
-							group,
-							a11y: groupDef.a11y,
-							logResults: groupDef.logResults
-						}, true );
+						// await processCommand( 'reference', {
+						// 	branch: LATEST_RELEASE_BRANCH,
+						// 	changeId: opts.changeId,
+						// 	group,
+						// 	a11y: groupDef.a11y,
+						// 	logResults: groupDef.logResults
+						// }, true );
 						await processCommand( 'test', {
 							branch: 'master',
 							group,
@@ -578,6 +586,7 @@ Skipping group "${groupName}" due to priority.
 *************************` );
 				}
 			}
+console.log('uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu')
 			const path = await makeReport( outputDir, html );
 			if ( !process.env.NONINTERACTIVE ) {
 				await batchSpawn.spawn( 'open', [ path ] );

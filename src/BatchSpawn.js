@@ -68,6 +68,7 @@ class BatchSpawn {
 	 * @return {Promise<undefined>}
 	 */
 	spawn( command, args, opts ) {
+    console.log('\x1b[32m%s\x1b[0m', `Spawning command: ${command} ${args.join(' ')}`);
 		if ( this.#promiseMap.size >= this.#batchSize ) {
 			return new Promise( ( resolve ) => {
 				this.#commandQueue.push( {
