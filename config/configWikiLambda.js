@@ -8,61 +8,76 @@ const {
 	VIEWPORT_DESKTOP_WIDEST
 } = require( '../viewports' );
 
-const tests = [
-	//
-	// Pages
-	//
+const scenarios = [
 	{
 		label: 'Special:CreateZObject (#vector-2022)',
-		path: '/wiki/Special:CreateZObject'
+		path: '/wiki/Special:CreateZObject',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Special:EvaluateFunctionCall (#vector-2022)',
-		path: '/wiki/Special:EvaluateFunctionCall'
+		path: '/wiki/Special:EvaluateFunctionCall',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Z1 (#vector-2022)',
-		path: '/wiki/Z1'
+		path: '/wiki/Z1',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Z104 (#vector-2022)',
-		path: '/wiki/Z104'
+		path: '/wiki/Z104',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Z204 (#vector-2022)',
-		path: '/wiki/Z204'
+		path: '/wiki/Z204',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Z500 (#vector-2022)',
-		path: '/wiki/Z500'
+		path: '/wiki/Z500',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Z600 (#vector-2022)',
-		path: '/wiki/Z600'
+		path: '/wiki/Z600',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Z801 (#vector-2022)',
-		path: '/wiki/Z801'
+		path: '/wiki/Z801',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Z901 (#vector-2022)',
-		path: '/wiki/Z901'
+		path: '/wiki/Z901',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Z1001 (#vector-2022)',
-		path: '/wiki/Z1001'
+		path: '/wiki/Z1001',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	},
 	{
 		label: 'Z8010 (#vector-2022)',
-		path: '/wiki/Z8010'
+		path: '/wiki/Z8010',
+		selectors: ['viewport'],
+		misMatchThreshold: 0.04
 	}
-];
-
-const scenarios = tests.map( ( test ) => {
+].map( ( test ) => {
 	return {
-		selectors: [ 'viewport' ],
 		url: `${BASE_URL}${test.path}`,
-		misMatchThreshold: 0.04,
 		...test
 	};
 } );

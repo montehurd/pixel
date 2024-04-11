@@ -8,34 +8,34 @@ const {
 	VIEWPORT_DESKTOP_WIDEST
 } = require( '../viewports' );
 
-const scenarios = utils.makeScenariosForSkins( [
+const scenarios = utils.makeScenariosForSkins([
 	{
 		label: 'Login',
 		path: '/wiki/Special:UserLogin',
-		hashtags: [],
-		selectors: [ 'viewport' ]
+		selectors: ['viewport'],
+		misMatchThreshold: 0.05
 	},
 	{
 		label: 'Create account',
 		path: '/wiki/Special:CreateAccount',
-		hashtags: [],
-		selectors: [ 'viewport' ]
+		selectors: ['viewport'],
+		misMatchThreshold: 0.05
 	},
 	{
 		label: 'login when logged in',
-		hashtags: [ 'logged-in' ],
+		hashtags: ['logged-in'],
 		path: '/wiki/Special:UserLogin',
-		selectors: [ 'viewport' ]
+		selectors: ['viewport'],
+		misMatchThreshold: 0.05
 	},
 	{
 		label: 'create account when logged in',
-		hashtags: [ 'logged-in' ],
+		hashtags: ['logged-in'],
 		path: '/wiki/Special:CreateAccount',
-		selectors: [ 'viewport' ]
+		selectors: ['viewport'],
+		misMatchThreshold: 0.05
 	}
-], [ 'vector-2022', 'vector', 'minerva' ] ).map( ( s ) => Object.assign( {}, s, {
-	misMatchThreshold: 0.05
-} ) );
+], ['vector-2022', 'vector', 'minerva']);
 
 module.exports = {
 	id: 'MediaWiki',

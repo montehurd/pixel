@@ -1,0 +1,219 @@
+{
+  "scenarios": [
+    {
+      "label": "Main page (#vector-2022)",
+      "path": "/wiki/Main_Page"
+    },
+    {
+      "label": "User page (#vector-2022)",
+      "path": "/wiki/User:Admin"
+    },
+    {
+      "label": "User sub pages (#vector-2022)",
+      "path": "/wiki/User:Admin/common.js"
+    },
+    {
+      "label": "Empty user page (#vector-2022)",
+      "path": "/wiki/User:Echo1"
+    },
+    {
+      "label": "Special page (#vector-2022)",
+      "path": "/wiki/Special:BlankPage"
+    },
+    {
+      "label": "Special page full width (#vector-2022, #limited-width-disabled)",
+      "path": "/wiki/Special:BlankPage",
+      "viewports": [
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Full article page (#vector-2022)",
+      "path": "/wiki/Test"
+    },
+    {
+      "label": "Article history page (#vector-2022)",
+      "path": "/w/index.php?title=Test&action=history"
+    },
+    {
+      "label": "Article talk page (#vector-2022)",
+      "path": "/wiki/Talk:Test"
+    },
+    {
+      "label": "Article talk page DT Disabled (#vector-2022)",
+      "path": "/wiki/Talk:Test?dtenable=0"
+    },
+    {
+      "label": "Talk page discussions Parsoid (#vector-2022)",
+      "path": "/wiki/Talk:Test?useparsoid=1"
+    },
+    {
+      "label": "3 column (#vector-2022, #logged-in)",
+      "path": "/wiki/Test"
+    },
+    {
+      "label": "3 column full width (#vector-2022, #logged-in, #limited-width-disabled)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "2 column (#vector-2022, #logged-in, #toc-unpinned, #main-menu-unpinned)",
+      "path": "/wiki/Test"
+    },
+    {
+      "label": "2 column full width (#vector-2022, #logged-in, #toc-unpinned, #main-menu-unpinned, #limited-width-disabled)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "1 column (#vector-2022, #logged-in, #toc-unpinned, #main-menu-unpinned, #page-tools-unpinned)",
+      "path": "/wiki/Test"
+    },
+    {
+      "label": "1 column full width (#vector-2022, #logged-in, #toc-unpinned, #main-menu-unpinned, #page-tools-unpinned, #limited-width-disabled)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "TOC pinned with hidden subsections (#vector-2022, #toggle-toc-subsections)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "desktop",
+        "desktop-wide",
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "TOC unpinned in page title (#vector-2022, #toc-unpinned, #toc-open)",
+      "path": "/wiki/Test"
+    },
+    {
+      "label": "TOC unpinned below page title (#vector-2022, #scroll, #toc-unpinned, #toc-open)",
+      "path": "/wiki/Test"
+    },
+    {
+      "label": "TOC pinned below page title (#vector-2022, #scroll)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "desktop",
+        "desktop-wide",
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Sticky header with pinned TOC (#vector-2022, #logged-in, #scroll)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "desktop",
+        "desktop-wide",
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Sticky header with unpinned TOC (#vector-2022, #logged-in, #scroll, #toc-unpinned, #toc-open)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "desktop",
+        "desktop-wide",
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Sticky header full width (#vector-2022, #logged-in, #scroll, #limited-width-disabled)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Search in header (#vector-2022, #search-focus)",
+      "path": "/wiki/Test"
+    },
+    {
+      "label": "Search in sticky header (#logged-in, #vector-2022, #scroll, #search-sticky, #search-focus)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "desktop",
+        "desktop-wide",
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Anon user links dropdown (#vector-2022, #user-links-open)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "phone",
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Logged in user links dropdown (#vector-2022, #logged-in, #user-links-open)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "phone",
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Main menu dropdown (#vector-2022, #logged-in, #main-menu-unpinned, #main-menu-open)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "phone",
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Page tools dropdown (#vector-2022, #logged-in, #page-tools-unpinned, #page-tools-open)",
+      "path": "/wiki/Test",
+      "viewports": [
+        "phone",
+        "desktop-widest"
+      ]
+    },
+    {
+      "label": "Legacy Vector article page (#vector)",
+      "path": "/wiki/Test?useskin=vector",
+      "delay": 1500
+    },
+    {
+      "label": "Legacy Vector article history page (#vector)",
+      "path": "/w/index.php?title=Test&action=history&useskin=vector",
+      "delay": 1500
+    },
+    {
+      "label": "Legacy Vector article talk page (#vector)",
+      "path": "/wiki/Talk:Test?useskin=vector",
+      "delay": 1500
+    },
+    {
+      "label": "Talk page discussions (#vector)",
+      "path": "/wiki/Talk:Test?useskin=vector",
+      "delay": 1500
+    },
+    {
+      "label": "Talk page discussions Parsoid (#vector)",
+      "path": "/wiki/Talk:Test?useskin=vector&useparsoid=1",
+      "delay": 1500
+    },
+    {
+      "label": "Article talk page DT Disabled (#vector-2022)",
+      "path": "/wiki/Talk:Test?dtenable=0"
+    },
+    {
+      "label": "MathML (#vector-2022)",
+      "path": "/wiki/MathTestNative"
+    }
+  ],
+  "misMatchThreshold": 0.04,
+  "scenarioOptions": {
+    "selectors": [
+      "viewport"
+    ]
+  }
+}

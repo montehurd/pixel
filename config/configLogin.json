@@ -1,0 +1,37 @@
+{
+  "scenarios": [
+    {
+      "label": "Login",
+      "path": "/wiki/Special:UserLogin"
+    },
+    {
+      "label": "Create account",
+      "path": "/wiki/Special:CreateAccount"
+    },
+    {
+      "label": "login when logged in",
+      "hashtags": [
+        "logged-in"
+      ],
+      "path": "/wiki/Special:UserLogin"
+    },
+    {
+      "label": "create account when logged in",
+      "hashtags": [
+        "logged-in"
+      ],
+      "path": "/wiki/Special:CreateAccount"
+    }
+  ],
+  "misMatchThreshold": 0.05,
+  "skins": [
+    "vector-2022",
+    "vector",
+    "minerva"
+  ],
+  "scenarioOptions": {
+    "selectors": [
+      "viewport"
+    ]
+  }
+}

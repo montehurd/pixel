@@ -1,0 +1,327 @@
+{
+  "scenarios": [
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 0 notifications (#minerva #mobile #logged-in #echo)",
+      "path": "/wiki/Test?useskin=minerva&useformat=mobile"
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 1 notifications (#minerva #mobile #logged-in #echo #echo-1)",
+      "hashtags": [
+        "#echo-1"
+      ],
+      "path": "/wiki/Test?useskin=minerva&useformat=mobile"
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 1 seen notifications (#minerva #mobile #logged-in #echo #echo-1-seen)",
+      "hashtags": [
+        "#echo-1-seen"
+      ],
+      "path": "/wiki/Test?useskin=minerva&useformat=mobile"
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 99+ notifications (#minerva #mobile #logged-in #echo #echo-100)",
+      "hashtags": [
+        "#echo-100"
+      ],
+      "path": "/wiki/Test?useskin=minerva&useformat=mobile"
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 0 notifications (#minerva #mobile #logged-in #echo #echo-drawer)",
+      "hashtags": [
+        "#echo-drawer"
+      ],
+      "path": "/wiki/Test?useskin=minerva&useformat=mobile"
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 0 notifications (#vector #logged-in #echo)",
+      "hashtags": [],
+      "path": "/wiki/Test?useskin=vector&useformat=desktop",
+      "misMatchThreshold": 2
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 1 notifications (#vector #logged-in #echo #echo-1)",
+      "hashtags": [
+        "#echo-1"
+      ],
+      "path": "/wiki/Test?useskin=vector&useformat=desktop",
+      "misMatchThreshold": 2
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 1 seen notifications (#vector #logged-in #echo #echo-1-seen)",
+      "hashtags": [
+        "#echo-1-seen"
+      ],
+      "path": "/wiki/Test?useskin=vector&useformat=desktop",
+      "misMatchThreshold": 2
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 99+ notifications (#vector #logged-in #echo #echo-100)",
+      "hashtags": [
+        "#echo-100"
+      ],
+      "path": "/wiki/Test?useskin=vector&useformat=desktop",
+      "misMatchThreshold": 2
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 0 notifications (#vector #logged-in #echo #echo-drawer)",
+      "hashtags": [
+        "#echo-drawer"
+      ],
+      "path": "/wiki/Test?useskin=vector&useformat=desktop",
+      "misMatchThreshold": 2
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 0 notifications (#vector-2022 #logged-in #echo)",
+      "hashtags": [],
+      "path": "/wiki/Test?useskin=vector-2022&useformat=desktop"
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 1 notifications (#vector-2022 #logged-in #echo #echo-1)",
+      "hashtags": [
+        "#echo-1"
+      ],
+      "path": "/wiki/Test?useskin=vector-2022&useformat=desktop"
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 1 seen notifications (#vector-2022 #logged-in #echo #echo-1-seen)",
+      "hashtags": [
+        "#echo-1-seen"
+      ],
+      "path": "/wiki/Test?useskin=vector-2022&useformat=desktop"
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 99+ notifications (#vector-2022 #logged-in #echo #echo-100)",
+      "hashtags": [
+        "#echo-100"
+      ],
+      "path": "/wiki/Test?useskin=vector-2022&useformat=desktop"
+    },
+    {
+      "removeSelectors": [
+        ".skin-vector-2022 .mw-workspace-container",
+        ".skin-vector #content",
+        ".skin-vector #mw-panel",
+        ".mw-table-of-contents-container",
+        ".skin-vector #footer",
+        ".skin-vector #left-navigation",
+        ".skin-vector #right-navigation",
+        ".skin-minerva #content",
+        ".skin-minerva footer"
+      ],
+      "selectors": [
+        "html"
+      ],
+      "label": "Echo smoke test with 0 notifications (#vector-2022 #logged-in #echo #echo-drawer)",
+      "hashtags": [
+        "#echo-drawer"
+      ],
+      "path": "/wiki/Test?useskin=vector-2022&useformat=desktop"
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "report/reference-screenshots-echo",
+    "bitmaps_test": "report/test-screenshots-echo",
+    "engine_scripts": "src/engine-scripts",
+    "html_report": "report/echo",
+    "ci_report": "report/ci-report-dev",
+    "json_report": "report/json-report-dev"
+  },
+  "report": [],
+  "misMatchThreshold": 0.04
+}

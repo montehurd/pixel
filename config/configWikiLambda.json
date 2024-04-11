@@ -1,0 +1,49 @@
+{
+  "scenarios": [
+    {
+      "label": "Special:CreateZObject (#vector-2022)",
+      "path": "/wiki/Special:CreateZObject"
+    },
+    {
+      "label": "Special:EvaluateFunctionCall (#vector-2022)",
+      "path": "/wiki/Special:EvaluateFunctionCall"
+    },
+    {
+      "label": "Z1 (#vector-2022)",
+      "path": "/wiki/Z1"
+    },
+    {
+      "label": "Z104 (#vector-2022)",
+      "path": "/wiki/Z104"
+    },
+    {
+      "label": "Z204 (#vector-2022)",
+      "path": "/wiki/Z204"
+    },
+    {
+      "label": "Z500 (#vector-2022)",
+      "path": "/wiki/Z500"
+    },
+    {
+      "label": "Z600 (#vector-2022)",
+      "path": "/wiki/Z600"
+    },
+    {
+      "label": "Z801 (#vector-2022)",
+      "path": "/wiki/Z801"
+    },
+    {
+      "label": "Z901 (#vector-2022)",
+      "path": "/wiki/Z901"
+    },
+    {
+      "label": "Z1001 (#vector-2022)",
+      "path": "/wiki/Z1001"
+    },
+    {
+      "label": "Z8010 (#vector-2022)",
+      "path": "/wiki/Z8010"
+    }
+  ],
+  "misMatchThreshold": 0.04
+}

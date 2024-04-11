@@ -25,8 +25,7 @@ const BASE_URL = process.env.PIXEL_MW_SERVER;
 const baseScenarios = /** @type {BaseScenario[]} */ ( [
 	{
 		label: 'Echo smoke test with 0 notifications',
-		path: '/wiki/Test',
-		hashtags: []
+		path: '/wiki/Test'
 	},
 	{
 		label: 'Echo smoke test with 1 notifications',

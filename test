@@ -1,0 +1,25 @@
+#!/bin/bash
+
+run_test() {
+    local old_js_file_path=$1
+    local new_json_file_path=$2
+
+    docker compose --progress=plain --project-directory /Users/montehurd/pixel -f /Users/montehurd/pixel/docker-compose.yml run --rm -it --entrypoint "node /pixel/src/configLoaderTest.js" -e OLD_JS_FILE_PATH=$old_js_file_path -e NEW_JSON_FILE_PATH=$new_json_file_path visual-regression
+}
+
+# run_test /pixel/config/configDesktop.js /pixel/config/configDesktop.json
+# run_test /pixel/config/configLogin.js /pixel/config/configLogin.json
+# run_test /pixel/config/configWikiLambda.js /pixel/config/configWikiLambda.json
+run_test /pixel/config/configEcho.js /pixel/config/configEcho.json
+
+
+
+
+
+# docker compose --progress=plain --project-directory /Users/montehurd/pixel -f /Users/montehurd/pixel/docker-compose.yml run --rm -it --entrypoint "backstop reference --config=/pixel/src/configLoader.js" -e CONFIG_JSON_PATH=/pixel/config/configDesktop.json visual-regression
+
+# docker compose --progress=plain --project-directory /Users/montehurd/pixel -f /Users/montehurd/pixel/docker-compose.yml run --rm -it --entrypoint "backstop reference --config=/pixel/src/configLoader.js" -e CONFIG_JSON_PATH=/pixel/config/configLogin.json visual-regression
+
+# docker compose --progress=plain --project-directory /Users/montehurd/pixel -f /Users/montehurd/pixel/docker-compose.yml run --rm -it --entrypoint "backstop reference --config=/pixel/src/configLoader.js" -e CONFIG_JSON_PATH=/pixel/config/configWikiLambda.json visual-regression
+
+# docker compose --progress=plain --project-directory /Users/montehurd/pixel -f /Users/montehurd/pixel/docker-compose.yml run --rm -it --entrypoint "node /pixel/config/configEcho.js" visual-regression
