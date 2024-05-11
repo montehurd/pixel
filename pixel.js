@@ -425,6 +425,7 @@ function setupCli() {
 			let html = '';
 			for ( const [ groupName, groupDef ] of Object.entries( groups ) ) {
 				html += generateGroupHtml( groupName, groupDef );
+				continue
 				const groupPriority = groupDef.priority || 0;
 				if ( groupPriority <= priority ) {
 					console.log( `*************************
