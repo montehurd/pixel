@@ -393,6 +393,12 @@ function setupCli() {
 		} );
 
 	program
+		.command( 'test123' )
+		.action( async ( opts ) => {
+			const indexFilePath = await generateIndexFile( "report", "test html" );
+		} );
+
+	program
 		.command( 'runAll' )
 		.description( 'Runs all the registered tests and generates a report.' )
 		.option( ...branchOpt )
