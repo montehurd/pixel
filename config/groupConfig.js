@@ -34,7 +34,7 @@ module.exports = {
 	},
 	mobile: {
 		name: 'Minerva and MobileFrontend',
-		priority: 1,
+		priority: 10,
 		config: 'configMobile.js'
 	},
 	'campaign-events': {
@@ -42,7 +42,7 @@ module.exports = {
 		config: 'configCampaignEvents.js'
 	},
 	codex: {
-		priority: 1,
+		priority: 10,
 		config: 'configCodex.js'
 	},
 	wikilambda: {
