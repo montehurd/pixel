@@ -1,10 +1,11 @@
 module.exports = {
 	id: 'MediaWiki',
-	asyncCaptureLimit: 4,
+	asyncCaptureLimit: 1,
 	asyncCompareLimit: 25,
 	engine: 'puppeteer',
 	engineOptions: {
-		headless: true,
+		headless: false,
+		slowMo: 100,
 		args: [
 			'--no-sandbox',
 			'--disable-setuid-sandbox',
@@ -15,5 +16,5 @@ module.exports = {
 	},
 	debug: false,
 	debugWindow: false,
-	delay: 100
+	delay: 1000
 };

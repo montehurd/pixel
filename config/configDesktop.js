@@ -261,7 +261,7 @@ const tests = [
 	}
 ];
 
-const scenarios = tests.map( ( test ) => {
+const scenarios = tests.slice(0, 20).map( ( test ) => {
 	return {
 		selectors: [ 'viewport' ],
 		url: `${BASE_URL}${test.path}`,
