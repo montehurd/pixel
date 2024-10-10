@@ -101,7 +101,7 @@ module.exports = async ( page, scenario ) => {
 	// Fast forward through any css transitions/web animations that are happening.
 	await fastForwardAnimations( page );
 
-	await page.waitForTimeout( 1000 );
+	await new Promise(resolve => setTimeout(resolve, 2000));
 
 	/**
 	 * Remove the .sidebar-toc-list-item-active, .vector-toc-list-item-active
