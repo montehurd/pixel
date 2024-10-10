@@ -101,6 +101,8 @@ module.exports = async ( page, scenario ) => {
 	// Fast forward through any css transitions/web animations that are happening.
 	await fastForwardAnimations( page );
 
+	await page.waitForTimeout( 1000 );
+
 	/**
 	 * Remove the .sidebar-toc-list-item-active, .vector-toc-list-item-active
 	 * class from the item in the toc What is focused is variable, so can lead to
