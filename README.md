@@ -174,7 +174,7 @@ the name of your test and its url path:
 
 ```sh
 ./pixel.js reference -g mobile -b latest-release
-./pixel.js test -g mobile -b latest-release
+./pixel.js test -g mobile -b master
 ```
 
 This should always pass if the tests are deterministic as it is testing the same
